@@ -1,0 +1,52 @@
+.hero {
+  height: calc(100svh - var(--header-height));
+  min-height: 420px;
+}
+
+.hero :global(.swiper) {
+  height: 100%;
+}
+
+.slide {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #044c8b, #06315c);
+  color: #ffffff;
+}
+
+.slide.light {
+  background: linear-gradient(135deg, #eaf1f8, #ffffff);
+  color: #044c8b;
+}
+
+.sloganWrapper {
+  max-width: var(--max-width);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.title {
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.line {
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin: 12px 0 32px;
+  background: currentColor;
+}
+
+.desc {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.desc b {
+  font-weight: 700;
+}

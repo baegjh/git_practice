@@ -1,0 +1,68 @@
+.content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  display: block;
+  border-radius: 6px;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.cardImage {
+  height: 320px;
+  background-size: cover;
+  background-position: center;
+  background-color: #dfe6ec;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .cardImage {
+  transform: scale(1.03);
+}
+
+.cardText {
+  height: 140px;
+  background: #222222;
+  padding: 20px;
+}
+
+.cardTitle {
+  display: block;
+  font-size: 26px;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 18px;
+}
+
+.cardTitle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 33px;
+  height: 2px;
+  background: var(--color-primary);
+}
+
+.cardDesc {
+  display: block;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #cccccc;
+}

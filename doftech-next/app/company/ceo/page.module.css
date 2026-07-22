@@ -1,0 +1,60 @@
+.content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.greeting {
+  font-size: 17px;
+  line-height: 1.9;
+  color: var(--color-text);
+  max-width: 760px;
+}
+
+.signature {
+  margin-top: 24px;
+  font-weight: 700;
+}
+
+.cards {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 720px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 28px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+.icon {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-primary);
+}
+
+.cardText strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--color-primary);
+}
+
+.cardText {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--color-text-light);
+}
