@@ -14,6 +14,7 @@ export default function IssueIPage() {
             BOM Consistency check
           </>
         }
+        images={["/img/issuei_img_0.png"]}
         bullets={[
           "3D MODEL과 연계하여 데이터 관리",
           "BOM 파일 생성 자동화",

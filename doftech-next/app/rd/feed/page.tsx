@@ -7,6 +7,7 @@ export default function FeedPage() {
       <FeatureBlock
         title="주요기능"
         desc="클라우드 기반 기본설계 및 FEED 업무 자동화 지원 시스템"
+        images={["/img/feed_img_0.png"]}
         bullets={[
           {
             label: "주요 FEED 업무(공정) 지원 Module",

@@ -33,6 +33,21 @@
   color: #7c93a8;
 }
 
+.imageStack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.imageFrame {
+  position: relative;
+  width: 100%;
+  min-height: 220px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f5f7f9;
+}
+
 .titleWrapper {
   margin-bottom: 20px;
 }

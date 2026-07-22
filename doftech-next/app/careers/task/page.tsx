@@ -1,18 +1,18 @@
+import Image from "next/image";
 import styles from "@/styles/content.module.css";
 
-const taskCount = 4;
+const files = Array.from(
+  { length: 4 },
+  (_, i) => `/img/task_img_${String(i).padStart(2, "0")}.png`,
+);
 
 export default function TaskPage() {
   return (
     <section className={styles.content}>
-      <p className={styles.note}>
-        직무소개 이미지는 원본 사이트에서 가져오지 않았습니다. 실제 이미지로
-        교체해 주세요.
-      </p>
       <div className={styles.placeholderGrid}>
-        {Array.from({ length: taskCount }, (_, i) => (
-          <div className={styles.placeholderTile} key={i}>
-            TASK {String(i + 1).padStart(2, "0")}
+        {files.map((src) => (
+          <div className={styles.imageTile} key={src}>
+            <Image src={src} alt="" fill style={{ objectFit: "cover" }} sizes="25vw" />
           </div>
         ))}
       </div>

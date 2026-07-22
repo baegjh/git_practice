@@ -13,10 +13,13 @@
 }
 
 .logo {
-  font-size: 16px;
-  font-weight: 800;
-  color: #ffffff;
+  height: 28px;
   margin-bottom: 8px;
+}
+
+.logo img {
+  height: 100%;
+  width: auto;
 }
 
 .address {

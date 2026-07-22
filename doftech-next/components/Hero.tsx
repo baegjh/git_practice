@@ -9,9 +9,9 @@ import "swiper/css/navigation";
 import styles from "./Hero.module.css";
 
 const slides = [
-  { light: true },
-  { light: false },
-  { light: true },
+  { light: true, bg: "/img/swiper_img_0.jpg" },
+  { light: false, bg: "/img/swiper_img_1.jpg" },
+  { light: true, bg: "/img/swiper_img_2.jpg" },
 ];
 
 export default function Hero() {
@@ -28,7 +28,10 @@ export default function Hero() {
       >
         {slides.map((slide, i) => (
           <SwiperSlide key={i}>
-            <div className={`${styles.slide} ${slide.light ? styles.light : ""}`}>
+            <div
+              className={`${styles.slide} ${slide.light ? styles.light : ""}`}
+              style={{ backgroundImage: `url(${slide.bg})` }}
+            >
               <div className={styles.sloganWrapper}>
                 <span className={styles.title}>NEEDS</span>
                 <span className={styles.line} />

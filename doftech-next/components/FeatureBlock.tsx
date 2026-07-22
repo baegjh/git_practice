@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import Image from "next/image";
 import styles from "./FeatureBlock.module.css";
 
 export type FeatureBullet =
@@ -22,6 +23,7 @@ export default function FeatureBlock({
   title,
   desc,
   bullets,
+  images,
   imageLabel = "이미지 준비중",
   hideImage = false,
 }: {
@@ -29,6 +31,7 @@ export default function FeatureBlock({
   title?: string;
   desc?: ReactNode;
   bullets: FeatureBullet[];
+  images?: string[];
   imageLabel?: string;
   hideImage?: boolean;
 }) {
@@ -37,7 +40,24 @@ export default function FeatureBlock({
       className={`${styles.block} ${hideImage ? styles.single : ""}`}
       id={id}
     >
-      {!hideImage && <div className={styles.image}>{imageLabel}</div>}
+      {!hideImage &&
+        (images && images.length > 0 ? (
+          <div className={styles.imageStack}>
+            {images.map((src) => (
+              <div className={styles.imageFrame} key={src}>
+                <Image
+                  src={src}
+                  alt=""
+                  fill
+                  style={{ objectFit: "contain" }}
+                  sizes="(max-width: 800px) 100vw, 50vw"
+                />
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className={styles.image}>{imageLabel}</div>
+        ))}
       <div>
         {title && (
           <div className={styles.titleWrapper}>

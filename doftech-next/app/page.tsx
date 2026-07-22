@@ -1,25 +1,26 @@
+import Image from "next/image";
 import Link from "next/link";
 import Hero from "@/components/Hero";
 import styles from "./page.module.css";
 
 const banners = [
   {
-    href: "#",
+    href: "/solution/aplus",
     title: "AI SOLUTION PACKAGE",
     desc: "Engineering IT 관련 AI Solution Package",
-    gradient: "linear-gradient(135deg, #044c8b, #1c7fc9)",
+    image: "/img/default_banner_0.png",
   },
   {
-    href: "#",
+    href: "/service/si",
     title: "SERVICE",
     desc: "SI Service, Plant & Engineering IT",
-    gradient: "linear-gradient(135deg, #333333, #666666)",
+    image: "/img/default_banner_1.png",
   },
   {
-    href: "#",
+    href: "/rd/feed",
     title: "R&D",
     desc: "R&D Technology",
-    gradient: "linear-gradient(135deg, #0a3d24, #1e8a5c)",
+    image: "/img/default_banner_2.png",
   },
 ];
 
@@ -32,10 +33,15 @@ export default function Home() {
         <div className={styles.grid}>
           {banners.map((banner) => (
             <Link href={banner.href} key={banner.title} className={styles.card}>
-              <div
-                className={styles.cardImage}
-                style={{ background: banner.gradient }}
-              />
+              <div className={styles.cardImage}>
+                <Image
+                  src={banner.image}
+                  alt=""
+                  fill
+                  style={{ objectFit: "cover" }}
+                  sizes="(max-width: 900px) 100vw, 33vw"
+                />
+              </div>
               <div className={styles.cardText}>
                 <span className={styles.cardTitle}>{banner.title}</span>
                 <span className={styles.cardDesc}>{banner.desc}</span>

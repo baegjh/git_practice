@@ -48,6 +48,7 @@ export default function SiPage() {
         id="sec_cars"
         title="CARS"
         desc="Cable 자동배치 솔루션"
+        images={["/img/cars_img_0.png"]}
         bullets={[
           {
             label: "S3D Data & Cable Schedule Import",
@@ -84,6 +85,7 @@ export default function SiPage() {
         id="sec_elas"
         title="Equipment Layout Automation System"
         desc="기기 자동배치 솔루션"
+        images={["/img/aelus_img_0.png"]}
         bullets={[
           {
             label: "기기배치에 필요한 데이터 입력 및 편의 기능 제공",
@@ -113,6 +115,7 @@ export default function SiPage() {
         id="sec_stmas"
         title="S3D Static Modeling Automation System"
         desc="Compress data를 연계하여 S3D Equipment Modeling 자동화"
+        images={["/img/stmas_img_0.png"]}
         bullets={[
           {
             label: "GUI",
@@ -139,6 +142,7 @@ export default function SiPage() {
         id="sec_romas"
         title="Rotating Equipment Modeling Automation System"
         desc="기기 정보를 관리하고 S3D에서 이를 활용한 Parametric Modeling 자동화"
+        images={["/img/romas_img_0.png"]}
         bullets={[
           { label: "S3D Equipment Catalog 표준화", lines: [] },
           {
@@ -177,6 +181,7 @@ export default function SiPage() {
         id="sec_sppid"
         title="SPPID Auto Check"
         desc="HEXAGON SP P&ID 자동 품질관리 시스템 (오류 감소 및 잘못된 프로세스 엔지니어링 설계 감지)"
+        images={["/img/sppid_img_0.png"]}
         bullets={[
           { label: "환경 설정", lines: ["SPPID 연계하여 장치 및 파이프 속성 설정"] },
           {
@@ -202,6 +207,7 @@ export default function SiPage() {
         id="sec_eq"
         title="S3D 비정형 EQ. Foundation 자동 모델링"
         desc="복잡한 형상의 비정형 구조물 자동 3D Modeling 시스템"
+        images={["/img/s3deq_img_0.png"]}
         bullets={[
           "복잡한 형상의 비정형 구조물들을 S3D에서 한 번에 자동으로 3D Modeling",
           {
@@ -215,6 +221,7 @@ export default function SiPage() {
         id="sec_edb"
         title="EDB (Engineering Database)"
         desc="엑셀 시트로 관리 되던 데이터를 데이터베이스화 하여 다른 시스템 연동을 통한 업무 능률 향상"
+        images={["/img/si_img_0.png"]}
         bullets={[
           "실시간 데이터 공유 및 부서별 독립 저장",
           "고객사 문서시스템과의 연동 및 history 조회",
@@ -229,6 +236,7 @@ export default function SiPage() {
         id="sec_issueR"
         title="ISSUE–R"
         desc="ISO Drawing의 Revision 발생 시 최소 M/H 로 Revision을 처리하여 관리하는 시스템"
+        images={["/img/si_img_1.png"]}
         bullets={[
           "도면 수정 사항 자동 파악",
           "자동 Marking으로 작업 시간 절감",
@@ -243,6 +251,7 @@ export default function SiPage() {
         id="sec_eload"
         title="E-LOAD"
         desc="Electrical Load 관련 Data 통합 관리로 산출물의 자동화 구현을 통한 M/H 절감 및 산출물 정확도 향상"
+        images={["/img/si_img_2.png"]}
         bullets={[
           {
             label: "LOAD Summary 계산",
@@ -263,6 +272,7 @@ export default function SiPage() {
         id="sec_psjg"
         title="PSJG (Piping Spool Joint Generator System)"
         desc="플랜트 현장의 공사물량/작업 관리 및 품질/안전/자원을 관리하는 시스템"
+        images={["/img/si_img_3.png"]}
         bullets={[
           {
             label: "Joint Control 기능",

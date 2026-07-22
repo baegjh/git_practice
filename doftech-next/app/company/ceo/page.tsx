@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function CeoPage() {
@@ -14,7 +15,9 @@ export default function CeoPage() {
 
       <div className={styles.cards}>
         <div className={styles.card}>
-          <div className={styles.icon} />
+          <div className={styles.icon}>
+            <Image src="/img/ceo_img_0.png" alt="" fill style={{ objectFit: "contain" }} />
+          </div>
           <div className={styles.cardText}>
             <strong>신뢰</strong>
             도프텍㈜은 설립 후 현재까지 변하지 않는 경영방침이 있습니다.
@@ -25,7 +28,9 @@ export default function CeoPage() {
           </div>
         </div>
         <div className={styles.card}>
-          <div className={styles.icon} />
+          <div className={styles.icon}>
+            <Image src="/img/ceo_img_1.png" alt="" fill style={{ objectFit: "contain" }} />
+          </div>
           <div className={styles.cardText}>
             <strong>사람</strong>
             도프텍㈜의 기업문화의 가장 중요한 것은 &lsquo;사람&rsquo;입니다.

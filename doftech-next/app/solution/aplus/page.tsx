@@ -7,6 +7,7 @@ export default function AplusPage() {
       <FeatureBlock
         title="주요기능"
         desc="배관 자동 경로 배치 솔루션 (Auto Pipe Layout with US)"
+        images={["/img/ars_img_0.png", "/img/ars_img_1.png"]}
         bullets={[
           <>
             <b>Intelligent P&ID(ID2)</b>와의 연계를 통해{" "}

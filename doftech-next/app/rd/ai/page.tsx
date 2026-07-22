@@ -7,6 +7,7 @@ export default function AiPage() {
       <FeatureBlock
         title="연구 방향"
         desc="인공지능을 이용한 형상 · 비형상 설계정보 인식 기술 개발"
+        images={["/img/ai_img_0.png"]}
         bullets={[
           "설계 형상 정보 인식을 위한 기계 학습",
           "Auto CAD와의 연계성",

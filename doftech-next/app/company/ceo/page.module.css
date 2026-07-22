@@ -39,11 +39,10 @@
 }
 
 .icon {
+  position: relative;
   flex-shrink: 0;
   width: 56px;
   height: 56px;
-  border-radius: 50%;
-  background: var(--color-primary);
 }
 
 .cardText strong {

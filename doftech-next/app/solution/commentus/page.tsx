@@ -7,6 +7,7 @@ export default function CommentUsPage() {
       <FeatureBlock
         title="주요기능"
         desc="3D Model Review Comment Tool"
+        images={["/img/commentus_img_0.png"]}
         bullets={[
           <>
             Comment의 효율적 관리 및 부서간 반영 현황 공유 및 검색, Snapshot,

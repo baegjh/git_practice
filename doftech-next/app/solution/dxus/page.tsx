@@ -7,6 +7,7 @@ export default function DxusPage() {
       <FeatureBlock
         title="주요기능"
         desc="Document Digital Transformation Tool"
+        images={["/img/dxus_img_0.png"]}
         bullets={[
           {
             label: "AI 기반 데이터 추출",

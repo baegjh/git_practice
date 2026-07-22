@@ -21,11 +21,15 @@
 }
 
 .logo {
-  font-size: 22px;
-  font-weight: 800;
-  color: var(--color-primary);
-  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  height: 32px;
   white-space: nowrap;
+}
+
+.logo img {
+  height: 100%;
+  width: auto;
 }
 
 .nav {

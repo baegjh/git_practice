@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { navItems } from "@/lib/nav";
@@ -15,7 +16,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.inner}>
         <Link href="/" className={styles.logo}>
-          DOFTECH
+          <Image src="/img/logo.png" alt="DOFTECH" width={140} height={32} priority />
         </Link>
 
         <nav className={styles.nav} aria-label="주요 메뉴">

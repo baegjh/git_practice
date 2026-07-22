@@ -1,6 +1,13 @@
+import Image from "next/image";
 import FeatureBlock from "@/components/FeatureBlock";
 import contentStyles from "@/styles/content.module.css";
 import styles from "./page.module.css";
+
+const diagrams = [
+  "/img/engineering_img_4.png",
+  "/img/engineering_img_6.png",
+  "/img/engineering_img_5.png",
+];
 
 const projectCounts = [
   { label: "PDS", value: 59 },
@@ -15,6 +22,7 @@ export default function EngineeringPage() {
     <section className={contentStyles.content}>
       <FeatureBlock
         title="3D SUPPORT 형상 개발 (S3D · PDMS · PDS)"
+        images={["/img/engineering_img_1.png"]}
         bullets={[
           "수행 프로젝트에 대한 3D Support Data를 체계적으로 분류 관리",
           "Support 형상을 프로세스에 맞게 자체 개발 하여 품질 및 전반적인 프로젝트 완성도 향상",
@@ -24,6 +32,7 @@ export default function EngineeringPage() {
 
       <FeatureBlock
         title="PDS to SP3D 변환 프로젝트 수행"
+        images={["/img/engineering_img_0.png"]}
         bullets={[
           "KNPC(Kuwait National Petroleum Company)에서 발주한 Project에 대하여 SP3D 변환 용역 수행",
           "Support 형상을 프로세스에 맞게 자체 개발하여 품질 및 전반적인 프로젝트 완성도 향상",
@@ -63,6 +72,14 @@ export default function EngineeringPage() {
           </div>
           <p className={styles.chartTitle}>수행 프로젝트</p>
         </div>
+      </div>
+
+      <div className={styles.diagramRow}>
+        {diagrams.map((src) => (
+          <div className={styles.diagramFrame} key={src}>
+            <Image src={src} alt="" fill style={{ objectFit: "contain" }} sizes="33vw" />
+          </div>
+        ))}
       </div>
     </section>
   );

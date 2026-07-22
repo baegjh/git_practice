@@ -8,19 +8,42 @@
 }
 
 .slide {
+  position: relative;
   height: 100%;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, #044c8b, #06315c);
+  background-color: #06315c;
+  background-size: cover;
+  background-position: center;
   color: #ffffff;
 }
 
+.slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(4, 76, 139, 0.55),
+    rgba(6, 49, 92, 0.65)
+  );
+}
+
+.slide.light::before {
+  background: linear-gradient(
+    135deg,
+    rgba(234, 241, 248, 0.75),
+    rgba(255, 255, 255, 0.6)
+  );
+}
+
 .slide.light {
-  background: linear-gradient(135deg, #eaf1f8, #ffffff);
   color: #044c8b;
 }
 
 .sloganWrapper {
+  position: relative;
+  z-index: 1;
   max-width: var(--max-width);
   width: 100%;
   margin: 0 auto;

@@ -7,6 +7,7 @@ export default function MarkusPage() {
       <FeatureBlock
         title="주요기능"
         desc="이미지 comment를 기본으로 검토자 별 Comment Overlay, Rev.별 비교 조회, Auto CAD로의 저장 등의 기능 제공"
+        images={["/img/markus_img_0.png"]}
         bullets={[
           {
             label: "사용자 편의성",

@@ -1,0 +1,11 @@
+.visual {
+  position: relative;
+  height: 260px;
+  background: #eef2f6;
+}
+
+@media (max-width: 767px) {
+  .visual {
+    display: none;
+  }
+}
