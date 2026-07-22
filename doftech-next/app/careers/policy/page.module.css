@@ -1,0 +1,73 @@
+.values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 700px) {
+  .values {
+    grid-template-columns: 1fr;
+  }
+}
+
+.valueCard {
+  padding: 32px 24px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.valueTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.valueSub {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.valueDesc {
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+.processTitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.process {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.step {
+  position: relative;
+  flex: 1;
+  min-width: 100px;
+  text-align: center;
+  padding: 20px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.step:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  right: -22px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-light);
+}

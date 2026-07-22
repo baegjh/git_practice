@@ -1,14 +1,14 @@
 import SectionTabs from "@/components/SectionTabs";
-import { companyTabs } from "@/lib/nav";
+import { rdTabs } from "@/lib/nav";
 
-export default function CompanyLayout({
+export default function RdLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
     <>
-      <SectionTabs items={companyTabs} label="회사소개 메뉴" />
+      <SectionTabs items={rdTabs} label="R&D 메뉴" />
       {children}
     </>
   );

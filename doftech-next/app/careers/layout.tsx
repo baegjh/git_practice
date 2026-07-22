@@ -1,14 +1,14 @@
 import SectionTabs from "@/components/SectionTabs";
-import { companyTabs } from "@/lib/nav";
+import { careersTabs } from "@/lib/nav";
 
-export default function CompanyLayout({
+export default function CareersLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
     <>
-      <SectionTabs items={companyTabs} label="회사소개 메뉴" />
+      <SectionTabs items={careersTabs} label="CAREERS 메뉴" />
       {children}
     </>
   );

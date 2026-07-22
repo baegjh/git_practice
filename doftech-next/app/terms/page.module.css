@@ -1,0 +1,28 @@
+.wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 24px 100px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.section {
+  margin-bottom: 28px;
+}
+
+.sectionTitle {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.section p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--color-text-light);
+  white-space: pre-line;
+}
