@@ -1,10 +1,18 @@
+@import "pretendard/dist/web/variable/pretendardvariable.css";
+
 :root {
   --color-primary: #044c8b;
+  --color-primary-deep: #033a6b;
+  --color-ink: #14212e;
   --color-text: #333333;
   --color-text-light: #666666;
+  --color-text-faint: #8a95a1;
   --color-border: #eeeeee;
+  --color-surface: #f7f9fb;
   --header-height: 70px;
   --max-width: 1200px;
+  --max-width-wide: 1320px;
+  --radius: 10px;
 }
 
 html {
@@ -26,6 +34,7 @@ body {
   font-family:
     "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
     "Malgun Gothic", "맑은 고딕", sans-serif;
+  letter-spacing: -0.01em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -60,4 +69,19 @@ main {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition:
+      opacity 0.6s ease,
+      transform 0.6s ease;
+  }
+
+  .reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -20,6 +20,7 @@ export const navItems: NavItem[] = [
       { title: "DXUS", href: "/solution/dxus" },
       { title: "CommentUS", href: "/solution/commentus" },
       { title: "ISSUE-I", href: "/solution/issue-i" },
+      { title: "Cognite", href: "/solution/cognite" },
     ],
   },
   {
